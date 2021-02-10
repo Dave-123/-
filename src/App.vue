@@ -6,27 +6,14 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import jsonp from 'jsonp';
+import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld
   },
-  data (){
-    return {
-      data:''
-    }
-  },
-  mounted(){
-    let url = 'https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/js/lib/jquery-1-edb203c114.10.2.js';
-    jsonp(url,(err,res) => {
-      const request = res;
-      this.data = request;
-      console.log(this.data);
-    })
-  }
+  
 }
 </script>
 
