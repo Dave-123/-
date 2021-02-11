@@ -8,7 +8,17 @@
 
 export default {
   name: 'App',
- 
+  data(){
+    return {
+      res:''
+    }
+  },
+  mounted(){
+    //mock
+    // this.axios.get('/user/login').then((res) => {
+    //   this.res = res;
+    // })
+  }
   
 }
 </script>
