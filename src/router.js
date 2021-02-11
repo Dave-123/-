@@ -1,4 +1,3 @@
-import { hasOwnMetadata } from 'core-js/fn/reflect';
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './pages/home';
